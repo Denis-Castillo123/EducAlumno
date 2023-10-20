@@ -1,4 +1,8 @@
 # EducaAlumnos
+
+## Link a Trello
+https://trello.com/b/3Aohkr1B/educalumos 
+
 ## Género
 Simulación /acción
 
