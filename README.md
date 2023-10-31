@@ -1,4 +1,8 @@
-# EducaAlumnos
+
+![Logo](https://github.com/Denis-Castillo123/EducAlumno/assets/90641538/c318cb96-d150-4bbe-8f95-3972c8d9f1d4)
+
+## Nota
+Los cambios principales se encuentran en la rama develop
 
 ## Link a Trello
 https://trello.com/b/3Aohkr1B/educalumos 
