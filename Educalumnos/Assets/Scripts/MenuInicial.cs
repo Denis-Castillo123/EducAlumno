@@ -5,12 +5,21 @@ using UnityEngine.SceneManagement;
 
 public class MenuInicial : MonoBehaviour
 {
-   public void Jugar(){
+     public void Jugar(){
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-   }
+     }
 
-   public void Salir(){
-    Debug.Log("Salir...");
-    Application.Quit();
-   }
+     public void Reglas(){
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
+     }
+
+     public void Volver(){
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
+     }
+
+
+     public void Salir(){
+          Debug.Log("Salir...");
+          Application.Quit();
+     }
 }
