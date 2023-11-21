@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7d5a9f8747ac99f46bcc5a7171c747b9
+guid: 1d9f89f0caec17b44a1b1b563cd46ad3
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,13 +123,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Personaje Barron-Muerte-Sheet_0
+      name: PLATAFORMAS SIMPLES-Sheet_0
       rect:
         serializedVersion: 2
-        x: 10
-        y: 7
-        width: 19
-        height: 19
+        x: 14
+        y: 44
+        width: 32
+        height: 5
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +137,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2c1aa8b53e0c5be47843d8b3ff411772
-      internalID: -1272125563
+      spriteID: f68139d3dce3e4844a4643f4505f9611
+      internalID: 1240840719
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Personaje Barron-Muerte-Sheet_1
+      name: PLATAFORMAS SIMPLES-Sheet_1
       rect:
         serializedVersion: 2
-        x: 46
-        y: 7
-        width: 19
-        height: 19
+        x: 48
+        y: 44
+        width: 32
+        height: 5
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,20 +158,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 714301a98d3c023469acd7140dee8c8e
-      internalID: -1664317027
+      spriteID: a6ee66646851b1742b3fd6acb6d593a4
+      internalID: 1834211461
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Personaje Barron-Muerte-Sheet_2
+      name: PLATAFORMAS SIMPLES-Sheet_2
       rect:
         serializedVersion: 2
-        x: 83
-        y: 7
-        width: 19
-        height: 19
+        x: 82
+        y: 44
+        width: 32
+        height: 5
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,20 +179,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 976e87076277ec54a8911ceb48515bf4
-      internalID: 335454669
+      spriteID: 418b16f21c4d8e4469a9ee7a81cf5270
+      internalID: -344399437
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Personaje Barron-Muerte-Sheet_3
+      name: PLATAFORMAS SIMPLES-Sheet_3
       rect:
         serializedVersion: 2
-        x: 119
-        y: 7
-        width: 19
-        height: 19
+        x: 14
+        y: 34
+        width: 32
+        height: 5
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9cad017ca0d3ca54a96bca8960c45641
-      internalID: -209701869
+      spriteID: 4ddfaaf1cc16e2340bbdb06bd7714658
+      internalID: 1668673157
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Personaje Barron-Muerte-Sheet_4
+      name: PLATAFORMAS SIMPLES-Sheet_4
       rect:
         serializedVersion: 2
-        x: 158
-        y: 7
-        width: 19
-        height: 19
+        x: 48
+        y: 34
+        width: 32
+        height: 5
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -221,20 +221,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 87eddc6c04780c84fbc19d8056c45155
-      internalID: 1770253310
+      spriteID: 80df50f883ee2a648a2bb87342a636a0
+      internalID: -1088460676
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Personaje Barron-Muerte-Sheet_5
+      name: PLATAFORMAS SIMPLES-Sheet_5
       rect:
         serializedVersion: 2
-        x: 195
-        y: 7
-        width: 19
-        height: 19
+        x: 82
+        y: 34
+        width: 32
+        height: 5
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -242,20 +242,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5515528d6b97a514bb002d51ac99c550
-      internalID: 329240010
+      spriteID: fb4be7559ab1c1d4bb4ef3bc5fc8d01a
+      internalID: -418859232
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Personaje Barron-Muerte-Sheet_6
+      name: PLATAFORMAS SIMPLES-Sheet_6
       rect:
         serializedVersion: 2
-        x: 231
-        y: 7
-        width: 19
-        height: 19
+        x: 14
+        y: 24
+        width: 32
+        height: 5
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -263,8 +263,113 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 02684453ce42303489dd75546d7ec1b8
-      internalID: 2139355554
+      spriteID: 0e15eb837a914fc42a5cdf234dbe94c5
+      internalID: -1164900431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATAFORMAS SIMPLES-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 24
+        width: 32
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8954f66b077271e47a70771521a3c0ab
+      internalID: 1317916113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATAFORMAS SIMPLES-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 24
+        width: 32
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bc89da0e9163f0498500571f091280b
+      internalID: -2103274695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATAFORMAS SIMPLES-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 14
+        width: 32
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8501c13c9ca0c0942b840d5df25505a2
+      internalID: -2109312980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATAFORMAS SIMPLES-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 14
+        width: 32
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e21390b471c861449fb14dec88caf28
+      internalID: -576581527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PLATAFORMAS SIMPLES-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 14
+        width: 32
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5c2d08b4cdea4649acc57f093e233b9
+      internalID: 1315913778
       vertices: []
       indices: 
       edges: []
@@ -280,13 +385,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Personaje Barron-Muerte-Sheet_0: -1272125563
-      Personaje Barron-Muerte-Sheet_1: -1664317027
-      Personaje Barron-Muerte-Sheet_2: 335454669
-      Personaje Barron-Muerte-Sheet_3: -209701869
-      Personaje Barron-Muerte-Sheet_4: 1770253310
-      Personaje Barron-Muerte-Sheet_5: 329240010
-      Personaje Barron-Muerte-Sheet_6: 2139355554
+      PLATAFORMAS SIMPLES-Sheet_0: 1240840719
+      PLATAFORMAS SIMPLES-Sheet_1: 1834211461
+      PLATAFORMAS SIMPLES-Sheet_10: -576581527
+      PLATAFORMAS SIMPLES-Sheet_11: 1315913778
+      PLATAFORMAS SIMPLES-Sheet_2: -344399437
+      PLATAFORMAS SIMPLES-Sheet_3: 1668673157
+      PLATAFORMAS SIMPLES-Sheet_4: -1088460676
+      PLATAFORMAS SIMPLES-Sheet_5: -418859232
+      PLATAFORMAS SIMPLES-Sheet_6: -1164900431
+      PLATAFORMAS SIMPLES-Sheet_7: 1317916113
+      PLATAFORMAS SIMPLES-Sheet_8: -2103274695
+      PLATAFORMAS SIMPLES-Sheet_9: -2109312980
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
