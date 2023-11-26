@@ -34,10 +34,12 @@ public class ChelinesM : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Compotamientos();
+        Comportamientos();
     }
 
-    public void Compotamientos()
+    //Metodo del mecanismo a seguir del enemigo de manera random, como lo son la direccion a avanzar,
+    //tiempo de espera, mecanismo de ataque del enemigo
+    public void Comportamientos()
     {
         if (Mathf.Abs(transform.position.x - target.transform.position.x) > rango_vision && !atacando)
         {

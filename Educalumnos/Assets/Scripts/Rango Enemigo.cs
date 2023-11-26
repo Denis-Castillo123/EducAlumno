@@ -10,13 +10,13 @@ public class RangoEnemigo : MonoBehaviour
 
     void Start()
     {
-        // Busca el objeto Barron-Animado una vez al inicio y almacénalo en la variable target.
+        // Busca el objeto Barron-Animado una vez al inicio y almacenalo en la variable target.
         target = GameObject.Find("Barron-Animado");
     }
 
     void OnTriggerEnter2D(Collider2D coll)
     {
-        // Verifica si el objeto que colisionó es el mismo que se encuentra en la variable target.
+        // Verifica si el objeto que colisiono es el mismo que se encuentra en la variable target.
         if (coll.gameObject == target)
         {
             animator.SetBool("Walk", false);
