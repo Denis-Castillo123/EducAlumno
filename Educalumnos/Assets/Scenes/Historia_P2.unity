@@ -208,7 +208,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1433779039}
         m_TargetAssemblyTypeName: Historia, Assembly-CSharp
-        m_MethodName: Siguiente
+        m_MethodName: Entendido
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1084,7 +1084,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 6, y: -7}
+  m_AnchoredPosition: {x: 6, y: -1}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1378960353

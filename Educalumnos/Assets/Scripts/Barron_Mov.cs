@@ -16,12 +16,19 @@ public class Barron_Mov : MonoBehaviour
     private bool Grounded;
     private float JumpRest;
 
+    [SerializeField] private float vida;
+    [SerializeField] private float maximoVida;
+    [SerializeField] private BarraVida barraVida;
+
+
     void Start()
     {
         Rigidbody2D = GetComponent<Rigidbody2D>();
         boxCollider = GetComponent<BoxCollider2D>();
         Animator = GetComponent<Animator>();
         JumpRest = JumMax;
+        vida = maximoVida;
+        barraVida.InicializarBarraVida(vida);
     }
 
     // Update is called once per frame
@@ -38,6 +45,16 @@ public class Barron_Mov : MonoBehaviour
         Debug.DrawRay(transform.position, Vector2.down * 0.1f, Color.red);
 
         Jump();
+    }
+
+    public void TomarDaño(float daño)
+    {
+        vida -= daño;
+        barraVida.CambiarVidaActual(vida);
+        if (vida <= 0)
+        {
+            Destroy(gameObject);
+        }
     }
 
     bool Suelo(){
