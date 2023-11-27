@@ -189,8 +189,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4286699540
-  m_fontColor: {r: 0.078431375, g: 0.84705883, b: 0.5058824, a: 1}
+    rgba: 4279537880
+  m_fontColor: {r: 0.84705883, g: 0.5647059, b: 0.078431375, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -470,7 +470,7 @@ GameObject:
   - component: {fileID: 992224908}
   - component: {fileID: 992224907}
   m_Layer: 5
-  m_Name: MenuNiveles
+  m_Name: Reglas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

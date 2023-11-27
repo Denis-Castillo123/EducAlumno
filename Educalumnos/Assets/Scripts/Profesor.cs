@@ -17,12 +17,19 @@ public class Profesor : MonoBehaviour
     private bool Grounded;
     private float JumpRest;
 
+    [SerializeField] private float vida;
+    [SerializeField] private float maximoVida;
+    [SerializeField] private BarraVida barraVida;
+
+
     void Start()
     {
         Rigidbody2D = GetComponent<Rigidbody2D>();
         boxCollider = GetComponent<BoxCollider2D>();
         Animator = GetComponent<Animator>();
         JumpRest = JumMax;
+        vida = maximoVida;
+        barraVida.InicializarBarraVida(vida);
     }
 
     // Update is called once per frame
@@ -50,7 +57,20 @@ public class Profesor : MonoBehaviour
         // }
     }
 
+<<<<<<< HEAD
+    public void TomarDaño(float daño)
+    {
+        vida -= daño;
+        barraVida.CambiarVidaActual(vida);
+        if (vida <= 0)
+        {
+            Destroy(gameObject);
+        }
+    }
+
+=======
     //Metodo para establecer un suelo en el nivel
+>>>>>>> e78f4a450da0acad4cedc2d86e54f3b1e66ff4d9
     bool Suelo(){
         RaycastHit2D raycastHit = Physics2D.BoxCast(boxCollider.bounds.center, new Vector2(boxCollider.bounds.size.x,boxCollider.bounds.size.y), 0f, Vector2.down, 0.2f, CapaSuelo);
         return raycastHit.collider != null;

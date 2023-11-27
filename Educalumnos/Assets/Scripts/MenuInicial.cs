@@ -6,17 +6,16 @@ using UnityEngine.SceneManagement;
 public class MenuInicial : MonoBehaviour
 {
      public void Jugar(){
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene("IngresarNombre");
      }
 
      public void Reglas(){
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
+        SceneManager.LoadScene("Reglas");
      }
 
      public void Volver(){
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
+        SceneManager.LoadScene("MenuInicial");
      }
-
 
      public void Salir(){
           Debug.Log("Salir...");
