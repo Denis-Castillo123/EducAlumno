@@ -30,8 +30,7 @@ public class ChelinesM : MonoBehaviour
         Rigidbody2D = GetComponent<Rigidbody2D>();
         boxCollider = GetComponent<BoxCollider2D>();
         ani = GetComponent<Animator>();
-        target = GameObject.Find("Barron-Animado");
-        barronScript = GameObject.Find("Barron-Animado").GetComponent<Barron_Mov>();
+        target = GameObject.Find("Profesor");
     }
 
     // Update is called once per frame
