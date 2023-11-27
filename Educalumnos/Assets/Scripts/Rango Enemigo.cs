@@ -23,7 +23,7 @@ public class RangoEnemigo : MonoBehaviour
             animator.SetBool("Run", false);
             animator.SetBool("attack", true);
             GetComponent<BoxCollider2D>().enabled = false;
-            Debug.Log("Atacado");
+            //Debug.Log("Atacado");
         }
     }
 

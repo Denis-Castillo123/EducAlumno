@@ -16,10 +16,12 @@ public class Barron_Mov : MonoBehaviour
     private float Horizontal;
     private bool Grounded;
     private float JumpRest;
+    public float damageAmount = 10f;
 
     [SerializeField] private float vida;
     [SerializeField] private float maximoVida;
     [SerializeField] private BarraVida barraVida;
+    
 
 
     void Start()
@@ -57,7 +59,6 @@ public class Barron_Mov : MonoBehaviour
         // }
     }
 
-<<<<<<< HEAD
     public void TomarDaño(float daño)
     {
         vida -= daño;
@@ -68,9 +69,6 @@ public class Barron_Mov : MonoBehaviour
         }
     }
 
-=======
-    //Metodo para establecer un suelo en el nivel
->>>>>>> e78f4a450da0acad4cedc2d86e54f3b1e66ff4d9
     bool Suelo(){
         RaycastHit2D raycastHit = Physics2D.BoxCast(boxCollider.bounds.center, new Vector2(boxCollider.bounds.size.x,boxCollider.bounds.size.y), 0f, Vector2.down, 0.2f, CapaSuelo);
         return raycastHit.collider != null;
@@ -111,5 +109,15 @@ public class Barron_Mov : MonoBehaviour
     //     GameObject ataque = Instantiate(BulletPrefab,transform.position + direction * 0.1f ,Quaternion.identity);
     //     ataque.GetComponent<power>().SetDirection(direction);
     // }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Controlador Chelines"))
+        {
+            TomarDaño(damageAmount);
+            barraVida.CambiarVidaActual(vida);
+            Debug.Log("Vida actualizada: " + vida);
+        }
+    }
 
 }
