@@ -30,13 +30,8 @@ public class ChelinesM : MonoBehaviour
         Rigidbody2D = GetComponent<Rigidbody2D>();
         boxCollider = GetComponent<BoxCollider2D>();
         ani = GetComponent<Animator>();
-<<<<<<< Updated upstream
-        target = GameObject.Find("Barron-Animado");
-        barronScript = GameObject.Find("Barron-Animado").GetComponent<Barron_Mov>();
-=======
         target = GameObject.Find("Profesor");
         profesorScript = GameObject.Find("Profesor").GetComponent<Profesor>();
->>>>>>> Stashed changes
     }
 
     // Update is called once per frame
@@ -149,9 +144,6 @@ public class ChelinesM : MonoBehaviour
         Hit.GetComponent<BoxCollider2D>().enabled = false;
     }
 
-<<<<<<< Updated upstream
-}
-=======
     void OnCollisionEnter2D(Collision2D collision)
     {
         //Debug.Log("Colisión detectada en ChelinesM");
@@ -171,4 +163,3 @@ public class ChelinesM : MonoBehaviour
 
 
 }
->>>>>>> Stashed changes
