@@ -11,7 +11,7 @@ public class RangoEnemigo : MonoBehaviour
     void Start()
     {
         // Busca el objeto Barron-Animado una vez al inicio y almacenalo en la variable target.
-        target = GameObject.Find("Barron-Animado");
+        target = GameObject.Find("Profesor");
     }
 
     void OnTriggerEnter2D(Collider2D coll)

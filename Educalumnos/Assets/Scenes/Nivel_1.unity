@@ -1113,7 +1113,7 @@ GameObject:
   - component: {fileID: 385739945}
   - component: {fileID: 385739946}
   m_Layer: 0
-  m_Name: Barron-Animado
+  m_Name: Profesor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1434,7 +1434,7 @@ GameObject:
   - component: {fileID: 754881560}
   - component: {fileID: 754881559}
   m_Layer: 0
-  m_Name: Controlador Chelines
+  m_Name: Controlador Enemigos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
