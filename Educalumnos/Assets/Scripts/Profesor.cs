@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Barron_Mov : MonoBehaviour
+public class Profesor : MonoBehaviour
 {
     public GameObject AtaqueE;
     public float Speed;
