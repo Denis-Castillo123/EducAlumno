@@ -180,7 +180,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Ingresa tu nombre
+  m_text: Ingresa tu nickname
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a3b95705f47045146b475742d5cc9933, type: 2}
   m_sharedMaterial: {fileID: 248489876485971579, guid: a3b95705f47045146b475742d5cc9933, type: 2}
@@ -1132,6 +1132,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76bae4ba60d5914498bcb0deb69e425e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  textoUI: {fileID: 0}
 --- !u!4 &1302580762
 Transform:
   m_ObjectHideFlags: 0

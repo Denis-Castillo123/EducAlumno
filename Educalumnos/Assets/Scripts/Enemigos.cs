@@ -5,6 +5,8 @@ using UnityEngine;
 public class ChelinesM : MonoBehaviour
 {
 
+    public Barron_Mov barronScript;
+    public float damageAmount = 10f;
     public int rutina;
     public float cronometro;
     public Animator ani;
@@ -28,13 +30,19 @@ public class ChelinesM : MonoBehaviour
         Rigidbody2D = GetComponent<Rigidbody2D>();
         boxCollider = GetComponent<BoxCollider2D>();
         ani = GetComponent<Animator>();
-        target = GameObject.Find("Profesor");
+        target = GameObject.Find("Barron-Animado");
+        barronScript = GameObject.Find("Barron-Animado").GetComponent<Barron_Mov>();
     }
 
     // Update is called once per frame
     void Update()
     {
         Comportamientos();
+    }
+
+    public void Atacar()
+    {
+        barronScript.TomarDaño(damageAmount);
     }
 
     //Metodo del mecanismo a seguir del enemigo de manera random, como lo son la direccion a avanzar,
