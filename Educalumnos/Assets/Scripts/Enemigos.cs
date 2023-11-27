@@ -5,8 +5,8 @@ using UnityEngine;
 public class ChelinesM : MonoBehaviour
 {
 
-    public Barron_Mov barronScript;
-    public float damageAmount = 10f;
+    public Profesor profesorScript;
+    public float damageAmount = 4f;
     public int rutina;
     public float cronometro;
     public Animator ani;
@@ -30,8 +30,13 @@ public class ChelinesM : MonoBehaviour
         Rigidbody2D = GetComponent<Rigidbody2D>();
         boxCollider = GetComponent<BoxCollider2D>();
         ani = GetComponent<Animator>();
+<<<<<<< Updated upstream
         target = GameObject.Find("Barron-Animado");
         barronScript = GameObject.Find("Barron-Animado").GetComponent<Barron_Mov>();
+=======
+        target = GameObject.Find("Profesor");
+        profesorScript = GameObject.Find("Profesor").GetComponent<Profesor>();
+>>>>>>> Stashed changes
     }
 
     // Update is called once per frame
@@ -42,7 +47,7 @@ public class ChelinesM : MonoBehaviour
 
     public void Atacar()
     {
-        barronScript.TomarDaño(damageAmount);
+        profesorScript.TomarDaño(damageAmount);
     }
 
     //Metodo del mecanismo a seguir del enemigo de manera random, como lo son la direccion a avanzar,
@@ -144,4 +149,26 @@ public class ChelinesM : MonoBehaviour
         Hit.GetComponent<BoxCollider2D>().enabled = false;
     }
 
+<<<<<<< Updated upstream
 }
+=======
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        //Debug.Log("Colisión detectada en ChelinesM");
+        if (collision.gameObject.CompareTag("Enemigo"))
+        {
+            // Asegurarse de tener una referencia válida al Profesor antes de llamar a TomarDaño
+            if (profesorScript != null)
+            {
+                profesorScript.TomarDaño(damageAmount);
+            }
+            else
+            {
+                Debug.LogError("Referencia al Profesor no encontrada en ChelinesM.");
+            }
+        }
+    }
+
+
+}
+>>>>>>> Stashed changes
