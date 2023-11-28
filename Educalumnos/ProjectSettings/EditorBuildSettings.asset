@@ -35,4 +35,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/IngresarNombre.unity
     guid: 76529160de9c33748bfbfcfebdd18657
+  - enabled: 1
+    path: Assets/Scenes/MejoresPuntajes.unity
+    guid: 59c0b0f460ebf244a90e669fcfb94e56
   m_configObjects: {}

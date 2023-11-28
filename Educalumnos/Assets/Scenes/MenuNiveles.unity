@@ -159,8 +159,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 343, y: -30}
-  m_SizeDelta: {x: 241.0074, y: 59.5465}
+  m_AnchoredPosition: {x: 30, y: -76}
+  m_SizeDelta: {x: 671.2508, y: 65.442}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &30815999
 MonoBehaviour:
@@ -292,7 +292,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -13, y: -166}
+  m_AnchoredPosition: {x: 4, y: -166}
   m_SizeDelta: {x: 241.0074, y: 59.5465}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &452698892
@@ -491,7 +491,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0}
+  m_AnchoredPosition: {x: -9, y: 4}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &927505112
@@ -514,7 +514,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Nivel 3
+  m_text: Ver mejores puntajes
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a3b95705f47045146b475742d5cc9933, type: 2}
   m_sharedMaterial: {fileID: 248489876485971579, guid: a3b95705f47045146b475742d5cc9933, type: 2}
@@ -933,7 +933,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -396, y: -28}
+  m_AnchoredPosition: {x: -175, y: 1}
   m_SizeDelta: {x: 241.0074, y: 59.5465}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1189573971
@@ -1315,7 +1315,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -17, y: -33}
+  m_AnchoredPosition: {x: 189, y: 8}
   m_SizeDelta: {x: 241.0074, y: 59.5465}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1577939196
@@ -1441,6 +1441,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09edcb444f4302d428198b122cc0cadb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mainAudioSource: {fileID: 0}
 --- !u!4 &1678612529
 Transform:
   m_ObjectHideFlags: 0

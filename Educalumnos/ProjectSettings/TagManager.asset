@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Controlador Enemigos
   - Enemigo
+  - Tarea
+  - Item
   layers:
   - Default
   - TransparentFX
