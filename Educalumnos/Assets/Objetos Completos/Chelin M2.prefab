@@ -195,7 +195,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09fc398b3cb201a4ba560516fbcc8232, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  barronScript: {fileID: 0}
+  profesorScript: {fileID: 0}
+  itemScript: {fileID: 0}
   damageAmount: 1
   rutina: 0
   cronometro: 0
@@ -209,6 +210,8 @@ MonoBehaviour:
   rango_ataque: 1
   rango: {fileID: 624643557891948043}
   Hit: {fileID: 0}
+  Health: 0
+  barraVida: {fileID: 0}
 --- !u!95 &2841821857455155517
 Animator:
   serializedVersion: 5

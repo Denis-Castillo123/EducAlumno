@@ -20,7 +20,7 @@ public class ChelinesM : MonoBehaviour
     public float rango_ataque;
     public GameObject rango;
     public GameObject Hit;
-    private int Health = 5;
+    public int Health = 5;
 
     private Rigidbody2D Rigidbody2D;
     private BoxCollider2D boxCollider;
