@@ -65,7 +65,8 @@ public class Barron_Mov : MonoBehaviour
         barraVida.CambiarVidaActual(vida);
         if (vida <= 0)
         {
-            Destroy(gameObject);
+            Animator.SetBool("EnSuelo",Suelo());
+            //Destroy(gameObject);
         }
     }
 
