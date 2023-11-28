@@ -5,6 +5,7 @@ using UnityEngine;
 public class Profesor : MonoBehaviour
 {
     public GameObject AtaqueE;
+    public GameObject panelReinicio;
     public float Speed;
     public float JumpForce;
     public float JumMax;
@@ -16,16 +17,22 @@ public class Profesor : MonoBehaviour
     private float Horizontal;
     private bool Grounded;
     private float JumpRest;
-    public float damageAmount = 10f;
+    public float damageAmount = 4f;
 
     [SerializeField] private float vida;
     [SerializeField] private float maximoVida;
     [SerializeField] private BarraVida barraVida;
     
 
+    public static Profesor Instancia { get; private set; }
 
     void Start()
     {
+        if (panelReinicio != null)
+        {
+            panelReinicio.SetActive(false);
+        }
+        
         Rigidbody2D = GetComponent<Rigidbody2D>();
         boxCollider = GetComponent<BoxCollider2D>();
         Animator = GetComponent<Animator>();
@@ -34,6 +41,17 @@ public class Profesor : MonoBehaviour
         barraVida.InicializarBarraVida(vida);
     }
 
+    void Awake()
+    {
+        if (Instancia == null)
+        {
+            Instancia = this;
+        }
+        else
+        {
+            Destroy(gameObject);// Si ya hay una instancia, destruir este objeto.
+        }
+    }
     // Update is called once per frame
     void Update()
     {
@@ -59,15 +77,26 @@ public class Profesor : MonoBehaviour
         // }
     }
 
+    private void MostrarPanelReinicio()
+    {
+        if (panelReinicio != null)
+        {
+            panelReinicio.SetActive(true);
+        }
+    }
+
     public void TomarDaño(float daño)
     {
         vida -= daño;
         barraVida.CambiarVidaActual(vida);
+
         if (vida <= 0)
         {
+            MostrarPanelReinicio();
             Destroy(gameObject);
         }
     }
+    
 
     bool Suelo(){
         RaycastHit2D raycastHit = Physics2D.BoxCast(boxCollider.bounds.center, new Vector2(boxCollider.bounds.size.x,boxCollider.bounds.size.y), 0f, Vector2.down, 0.2f, CapaSuelo);
@@ -110,14 +139,15 @@ public class Profesor : MonoBehaviour
     //     ataque.GetComponent<power>().SetDirection(direction);
     // }
 
-    void OnCollisionEnter(Collision collision)
+    void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Controlador Chelines"))
+        if (collision.gameObject.CompareTag("Enemigo"))
         {
             TomarDaño(damageAmount);
             barraVida.CambiarVidaActual(vida);
             Debug.Log("Vida actualizada: " + vida);
         }
     }
+
 
 }
