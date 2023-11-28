@@ -20,7 +20,7 @@ public class Profesor : MonoBehaviour
     private float JumpRest;
     public float damageAmount = 4f;
 
-    private float LastShoot;
+    public float LastShoot;
 
     [SerializeField] private float vida;
     [SerializeField] private float maximoVida;
@@ -74,7 +74,7 @@ public class Profesor : MonoBehaviour
 
         Jump();
 
-        if(Input.GetKey(KeyCode.Space) && Time.time > LastShoot + 0.25)
+        if(Input.GetKey(KeyCode.Space) && Time.time > LastShoot + 0.75)
         {
             Shoot();
             LastShoot = Time.time;
@@ -122,7 +122,7 @@ public class Profesor : MonoBehaviour
         {
             JumpRest--;
             Rigidbody2D.velocity = new Vector2(Rigidbody2D.velocity.x,0f);
-            Debug.Log("Jumping!");
+            //Debug.Log("Jumping!");
             Rigidbody2D.AddForce(Vector2.up * JumpForce, ForceMode2D.Impulse);
         }
     }
@@ -151,7 +151,7 @@ public class Profesor : MonoBehaviour
         {
             TomarDaño(damageAmount);
             barraVida.CambiarVidaActual(vida);
-            Debug.Log("Vida actualizada: " + vida);
+            //Debug.Log("Vida actualizada: " + vida);
         }
     }
 

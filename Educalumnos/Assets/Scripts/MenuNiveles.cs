@@ -14,7 +14,7 @@ public class MenuNiveles : MonoBehaviour
     }
 
     public void Nivel3(){
-        SceneManager.LoadScene("Nive_3");
+        SceneManager.LoadScene("MejoresPuntajes");
     }
 
     public void Volver(){

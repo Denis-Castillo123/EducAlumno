@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class ChelinesM : MonoBehaviour
 {
-
     public Profesor profesorScript;
     public Item itemScript;
     public float damageAmount = 4f;
@@ -21,12 +20,25 @@ public class ChelinesM : MonoBehaviour
     public float rango_ataque;
     public GameObject rango;
     public GameObject Hit;
-    private int Health = 3;
+    private int Health = 5;
 
     private Rigidbody2D Rigidbody2D;
     private BoxCollider2D boxCollider;
 
+    [SerializeField] private BarraVida barraVida;
+    //[SerializeField] private MongoDBManager mongoDBManager;
+    private MongoDBManager mongoDBManager;
+    private GameManager gameManager;
+    //[SerializeField] private Item itemScript;
+
     // Start is called before the first frame update
+
+    void Awake()
+    {
+        //mongoDBManager = FindObjectOfType<MongoDBManager>();
+        // Resto de tu código Start()
+    }
+
     void Start()
     {
         Rigidbody2D = GetComponent<Rigidbody2D>();
@@ -34,12 +46,21 @@ public class ChelinesM : MonoBehaviour
         ani = GetComponent<Animator>();
         target = GameObject.Find("Profesor");
         profesorScript = GameObject.Find("Profesor").GetComponent<Profesor>();
+        //mongoDBManager = FindObjectOfType<MongoDBManager>();
+        mongoDBManager = GameObject.FindObjectOfType<MongoDBManager>();
+        gameManager = GameObject.FindObjectOfType<GameManager>();
+        //print(gameManager);
+
+        string nombreJugador = PlayerPrefs.GetString("NombreJugador", "JugadorAnónimo");
+        //playerNameText.text = "Jugador: " + nombreJugador;
+
     }
 
     // Update is called once per frame
     void Update()
     {
         Comportamientos();
+        itemScript = GameObject.FindObjectOfType<Item>();
     }
 
     public void Atacar()
@@ -149,42 +170,45 @@ public class ChelinesM : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        // Debug.Log("Colisión detectada en ChelinesM");
-        if (collision.gameObject.CompareTag("Enemigo"))
+        if (collision.gameObject.CompareTag("Item"))
         {
-            // Asegurarse de tener una referencia válida al Profesor antes de llamar a TomarDaño
-            if (profesorScript != null)
-            {
-                profesorScript.TomarDaño(damageAmount);
-            }
-            else
-            {
-                Debug.LogError("Referencia al Profesor no encontrada en ChelinesM.");
-            }
-        }
+            //Debug.Log("Colisionando con item");
+            Aprender();
+            itemScript.DestroyItem();
 
-        Debug.Log("A punto de colisionar");
-        if (collision.gameObject.CompareTag("Tarea"))
-        {
-            Debug.Log("Colisionando con item");
-            if (itemScript != null)
-            {
-                Aprender();
-            }
-            else
-            {
-                Debug.LogError("Referencia al Item no encontrada");
-            }
         }
 
 
     }
+
+    // public void Aprender()
+    // {
+    //     Health = Health - 1;
+    //     if (Health == 0) 
+    //     {
+    //         Destroy(gameObject);
+    //         mongoDBManager.SumarPuntos("NombreJugador", 10);
+    //     }
+    // }
 
     public void Aprender()
     {
         Health = Health - 1;
-        if (Health == 0) Destroy(gameObject);
-    }
+        if (Health == 0)
+        {
+            string nombreJugador = gameManager.ObtenerNombre();
+            print(nombreJugador);
 
+            if (!string.IsNullOrEmpty(nombreJugador))
+            {
+                Destroy(gameObject);
+                mongoDBManager.SumarPuntos(nombreJugador, 10);
+            }
+            else
+            {
+                Debug.LogWarning("Nombre del jugador no encontrado al intentar sumar puntos.");
+            }
+        }
+    }
 
 }

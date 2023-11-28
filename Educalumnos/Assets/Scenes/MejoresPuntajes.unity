@@ -292,7 +292,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 13.1839, y: 16.3333}
+  m_AnchoredPosition: {x: 10, y: 38}
   m_SizeDelta: {x: 651.3678, y: 213.3334}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &388057054
@@ -308,6 +308,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textoUI: {fileID: 388057055}
+  score: {fileID: 0}
 --- !u!114 &388057055
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1039,6 +1040,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textoUI: {fileID: 0}
+  score: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
