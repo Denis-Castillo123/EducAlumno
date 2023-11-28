@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Profesor : MonoBehaviour
 {
+    public GameObject Item;
     public GameObject AtaqueE;
     public GameObject panelReinicio;
     public float Speed;
@@ -18,6 +19,8 @@ public class Profesor : MonoBehaviour
     private bool Grounded;
     private float JumpRest;
     public float damageAmount = 4f;
+
+    private float LastShoot;
 
     [SerializeField] private float vida;
     [SerializeField] private float maximoVida;
@@ -71,10 +74,12 @@ public class Profesor : MonoBehaviour
 
         Jump();
 
-        // if(Input.GetKey(KeyCode.Space))
-        // {
-        //     Shoot();
-        // }
+        if(Input.GetKey(KeyCode.Space) && Time.time > LastShoot + 0.25)
+        {
+            Shoot();
+            LastShoot = Time.time;
+        }
+        
     }
 
     private void MostrarPanelReinicio()
@@ -130,15 +135,15 @@ public class Profesor : MonoBehaviour
             Rigidbody2D.position.y);
     }
 
-    // private void Shoot()
-    // {
-    //     Vector2 direction;
-    //     if(transform.localScale.x == 1.0f) direction = Vector2.right;
-    //     else direction = Vector2.left;
+    private void Shoot()
+    {
+        Vector3 direction;
+        if(transform.localScale.x == 10.0f) direction = Vector3.right;
+        else direction = Vector3.left;
 
-    //     GameObject ataque = Instantiate(BulletPrefab,transform.position + direction * 0.1f ,Quaternion.identity);
-    //     ataque.GetComponent<power>().SetDirection(direction);
-    // }
+        GameObject ataque = Instantiate(Item,transform.position + direction * 0.1f ,Quaternion.identity);
+        ataque.GetComponent<Item>().SetDirection(direction);
+    }
 
     void OnCollisionEnter2D(Collision2D collision)
     {

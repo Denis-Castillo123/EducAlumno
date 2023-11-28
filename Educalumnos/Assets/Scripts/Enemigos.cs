@@ -6,6 +6,7 @@ public class ChelinesM : MonoBehaviour
 {
 
     public Profesor profesorScript;
+    public Item itemScript;
     public float damageAmount = 4f;
     public int rutina;
     public float cronometro;
@@ -20,6 +21,7 @@ public class ChelinesM : MonoBehaviour
     public float rango_ataque;
     public GameObject rango;
     public GameObject Hit;
+    private int Health = 3;
 
     private Rigidbody2D Rigidbody2D;
     private BoxCollider2D boxCollider;
@@ -52,88 +54,89 @@ public class ChelinesM : MonoBehaviour
         if (Mathf.Abs(transform.position.x - target.transform.position.x) > rango_vision && !atacando)
         {
             Rigidbody2D.position = new Vector2(Mathf.Clamp(Rigidbody2D.position.x, -8.01f, 43.59f), Rigidbody2D.position.y);
-        ani.SetBool("Run",false);
-        ani.SetBool("attack",false);
-        cronometro += 1 * Time.deltaTime;
-        if(cronometro >= 4)
-        {
-            rutina = Random.Range(0,2);
-            cronometro = 0;
-        }
+            ani.SetBool("Run", false);
+            ani.SetBool("attack", false);
+            cronometro += 1 * Time.deltaTime;
+            if (cronometro >= 4)
+            {
+                rutina = Random.Range(0, 2);
+                cronometro = 0;
+            }
 
-        switch (rutina)
-        {
-            case 0:
-                ani.SetBool("Walk",false);
-                break;
-            case 1:
-                direccion = Random.Range(0,2);
-                rutina ++;
-                break;
-            case 2:
+            switch (rutina)
+            {
+                case 0:
+                    ani.SetBool("Walk", false);
+                    break;
+                case 1:
+                    direccion = Random.Range(0, 2);
+                    rutina++;
+                    break;
+                case 2:
 
-                switch (direccion)
-                {
-                    case 0:
-                        transform.rotation = Quaternion.Euler(0,0,0);
-                        transform.Translate(Vector2.right * speed_walk * Time.deltaTime);
-                        break;
-                    case 1:
-                        transform.rotation = Quaternion.Euler(0,180,0);
-                        transform.Translate(Vector2.right * speed_walk * Time.deltaTime);
-                        break;
-                }
-                ani.SetBool("Walk",true);
-                break;
+                    switch (direccion)
+                    {
+                        case 0:
+                            transform.rotation = Quaternion.Euler(0, 0, 0);
+                            transform.Translate(Vector2.right * speed_walk * Time.deltaTime);
+                            break;
+                        case 1:
+                            transform.rotation = Quaternion.Euler(0, 180, 0);
+                            transform.Translate(Vector2.right * speed_walk * Time.deltaTime);
+                            break;
+                    }
+                    ani.SetBool("Walk", true);
+                    break;
+            }
         }
-        }else
+        else
         {
             if (Mathf.Abs(transform.position.x - target.transform.position.x) > rango_ataque && !atacando)
             {
-                if(transform.position.x < target.transform.position.x)
+                if (transform.position.x < target.transform.position.x)
                 {
-                    ani.SetBool("Walk",false);
-                    ani.SetBool("Run",false);
+                    ani.SetBool("Walk", false);
+                    ani.SetBool("Run", false);
                     transform.Translate(Vector2.right * speed_run * Time.deltaTime);
-                    transform.rotation = Quaternion.Euler(0,0,0);
-                    ani.SetBool("attack",true);
+                    transform.rotation = Quaternion.Euler(0, 0, 0);
+                    ani.SetBool("attack", true);
                 }
                 else
                 {
-                    ani.SetBool("Walk",false);
-                    ani.SetBool("Run",false);
+                    ani.SetBool("Walk", false);
+                    ani.SetBool("Run", false);
                     transform.Translate(Vector2.right * speed_run * Time.deltaTime);
-                    transform.rotation = Quaternion.Euler(0,180,0);
-                    ani.SetBool("attack",true);
+                    transform.rotation = Quaternion.Euler(0, 180, 0);
+                    ani.SetBool("attack", true);
                 }
             }
             else
             {
-                if(!atacando)
+                if (!atacando)
                 {
-                    if(transform.position.x < target.transform.position.x)
+                    if (transform.position.x < target.transform.position.x)
                     {
-                        transform.rotation = Quaternion.Euler(0,0,0);
+                        transform.rotation = Quaternion.Euler(0, 0, 0);
                     }
                     else
                     {
-                        transform.rotation = Quaternion.Euler(0,180,0);
+                        transform.rotation = Quaternion.Euler(0, 180, 0);
                     }
-                    ani.SetBool("Walk",false);
-                    ani.SetBool("Run",false);
+                    ani.SetBool("Walk", false);
+                    ani.SetBool("Run", false);
                 }
             }
         }
-        
+
     }
 
     public void Final_Ani()
     {
-        ani.SetBool("attack",false);
+        ani.SetBool("attack", false);
         atacando = false;
         rango.GetComponent<BoxCollider2D>().enabled = true;
     }
-    
+
     public void ColliderWeaponTrue()
     {
         Hit.GetComponent<BoxCollider2D>().enabled = true;
@@ -146,7 +149,7 @@ public class ChelinesM : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        //Debug.Log("Colisión detectada en ChelinesM");
+        // Debug.Log("Colisión detectada en ChelinesM");
         if (collision.gameObject.CompareTag("Enemigo"))
         {
             // Asegurarse de tener una referencia válida al Profesor antes de llamar a TomarDaño
@@ -159,6 +162,28 @@ public class ChelinesM : MonoBehaviour
                 Debug.LogError("Referencia al Profesor no encontrada en ChelinesM.");
             }
         }
+
+        Debug.Log("A punto de colisionar");
+        if (collision.gameObject.CompareTag("Tarea"))
+        {
+            Debug.Log("Colisionando con item");
+            if (itemScript != null)
+            {
+                Aprender();
+            }
+            else
+            {
+                Debug.LogError("Referencia al Item no encontrada");
+            }
+        }
+
+
+    }
+
+    public void Aprender()
+    {
+        Health = Health - 1;
+        if (Health == 0) Destroy(gameObject);
     }
 
 
