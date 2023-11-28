@@ -92,10 +92,9 @@ public class Profesor : MonoBehaviour
 
         if (vida <= 0)
         {
-            MostrarPanelReinicio();
             Animator.SetBool("Muerte",true);
+            MostrarPanelReinicio();
             //Destroy(gameObject);
-
         }
     }
     
