@@ -65,7 +65,8 @@ public class Profesor : MonoBehaviour
         barraVida.CambiarVidaActual(vida);
         if (vida <= 0)
         {
-            Destroy(gameObject);
+             Animator.SetBool("Muerte",true);
+            //Destroy(gameObject);
         }
     }
 
