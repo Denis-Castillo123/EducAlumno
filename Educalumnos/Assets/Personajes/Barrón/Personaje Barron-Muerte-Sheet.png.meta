@@ -126,10 +126,10 @@ TextureImporter:
       name: Personaje Barron-Muerte-Sheet_0
       rect:
         serializedVersion: 2
-        x: 10
-        y: 7
+        x: 7
+        y: 8
         width: 19
-        height: 19
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,8 +137,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2c1aa8b53e0c5be47843d8b3ff411772
-      internalID: -1272125563
+      spriteID: 31f62ffc72b71b9439a4dcab61ed5e3b
+      internalID: 1710724657
       vertices: []
       indices: 
       edges: []
@@ -147,10 +147,10 @@ TextureImporter:
       name: Personaje Barron-Muerte-Sheet_1
       rect:
         serializedVersion: 2
-        x: 46
-        y: 7
+        x: 43
+        y: 8
         width: 19
-        height: 19
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,8 +158,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 714301a98d3c023469acd7140dee8c8e
-      internalID: -1664317027
+      spriteID: f126a25117afba345a876a7f7d45f754
+      internalID: 161395332
       vertices: []
       indices: 
       edges: []
@@ -168,10 +168,10 @@ TextureImporter:
       name: Personaje Barron-Muerte-Sheet_2
       rect:
         serializedVersion: 2
-        x: 83
-        y: 7
+        x: 80
+        y: 8
         width: 19
-        height: 19
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,8 +179,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 976e87076277ec54a8911ceb48515bf4
-      internalID: 335454669
+      spriteID: 0abf9d2ae7ff5cb4ea2857a01e1168cd
+      internalID: -1318637143
       vertices: []
       indices: 
       edges: []
@@ -189,10 +189,10 @@ TextureImporter:
       name: Personaje Barron-Muerte-Sheet_3
       rect:
         serializedVersion: 2
-        x: 119
-        y: 7
+        x: 116
+        y: 8
         width: 19
-        height: 19
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,8 +200,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9cad017ca0d3ca54a96bca8960c45641
-      internalID: -209701869
+      spriteID: 27f937e1aa5d39f4b94a41c53a6c44c0
+      internalID: 476289564
       vertices: []
       indices: 
       edges: []
@@ -213,7 +213,7 @@ TextureImporter:
         x: 158
         y: 7
         width: 19
-        height: 19
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -221,8 +221,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 87eddc6c04780c84fbc19d8056c45155
-      internalID: 1770253310
+      spriteID: 19dac1a4d2fbee347bd874c5b4763627
+      internalID: -1170078960
       vertices: []
       indices: 
       edges: []
@@ -234,7 +234,7 @@ TextureImporter:
         x: 195
         y: 7
         width: 19
-        height: 19
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -242,8 +242,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5515528d6b97a514bb002d51ac99c550
-      internalID: 329240010
+      spriteID: 368a328aecefd7945a1a3902b7d2bfc0
+      internalID: -1398592213
       vertices: []
       indices: 
       edges: []
@@ -255,7 +255,7 @@ TextureImporter:
         x: 231
         y: 7
         width: 19
-        height: 19
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -263,8 +263,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 02684453ce42303489dd75546d7ec1b8
-      internalID: 2139355554
+      spriteID: 555ae3e68a3b8ed44a983065d6ff8ec0
+      internalID: -985490464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Personaje Barron-Muerte-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 7
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07259f9f41fac2a4b9872be9b7428083
+      internalID: -855575688
       vertices: []
       indices: 
       edges: []
@@ -280,13 +301,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Personaje Barron-Muerte-Sheet_0: -1272125563
-      Personaje Barron-Muerte-Sheet_1: -1664317027
-      Personaje Barron-Muerte-Sheet_2: 335454669
-      Personaje Barron-Muerte-Sheet_3: -209701869
-      Personaje Barron-Muerte-Sheet_4: 1770253310
-      Personaje Barron-Muerte-Sheet_5: 329240010
-      Personaje Barron-Muerte-Sheet_6: 2139355554
+      Personaje Barron-Muerte-Sheet_0: 1710724657
+      Personaje Barron-Muerte-Sheet_1: 161395332
+      Personaje Barron-Muerte-Sheet_2: -1318637143
+      Personaje Barron-Muerte-Sheet_3: 476289564
+      Personaje Barron-Muerte-Sheet_4: -1170078960
+      Personaje Barron-Muerte-Sheet_5: -1398592213
+      Personaje Barron-Muerte-Sheet_6: -985490464
+      Personaje Barron-Muerte-Sheet_7: -855575688
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
