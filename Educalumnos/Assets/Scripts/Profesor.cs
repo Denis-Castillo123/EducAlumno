@@ -19,6 +19,7 @@ public class Profesor : MonoBehaviour
     private bool Grounded;
     private float JumpRest;
     public float damageAmount = 4f;
+    private bool isDying;
 
     public float LastShoot;
 
@@ -97,8 +98,20 @@ public class Profesor : MonoBehaviour
 
         if (vida <= 0)
         {
-            Animator.SetBool("Muerte",true);
+            Animator.SetTrigger("Muerte");
             MostrarPanelReinicio();
+            Speed = 0;
+            Rigidbody2D.gravityScale = 1000;
+            isDying = true;
+            AnimatorStateInfo stateInfo = Animator.GetCurrentAnimatorStateInfo(0);
+            if (isDying && stateInfo.normalizedTime >= 1f)
+            {
+                Debug.Log("Entreee");
+                Destroy(gameObject);
+                // Destruir el objeto después de que la animación haya terminado
+            }
+            // Rigidbody2D.velocity.x = null;
+            // Rigidbody2D.velocity.y = null;
             //Destroy(gameObject);
         }
     }
