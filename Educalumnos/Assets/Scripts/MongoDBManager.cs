@@ -21,7 +21,7 @@ public class MongoDBManager : MonoBehaviour
         database = client.GetDatabase("Educalumnos");
         jugadoresCollection = database.GetCollection<Jugador>("jugadores");
         ConsultarMejoresPuntajes();
-        //print(score);
+        print(score);
     }
 
 

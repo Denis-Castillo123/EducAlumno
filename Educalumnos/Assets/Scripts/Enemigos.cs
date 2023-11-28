@@ -74,7 +74,7 @@ public class ChelinesM : MonoBehaviour
     {
         if (Mathf.Abs(transform.position.x - target.transform.position.x) > rango_vision && !atacando)
         {
-            Rigidbody2D.position = new Vector2(Mathf.Clamp(Rigidbody2D.position.x, -8.01f, 43.59f), Rigidbody2D.position.y);
+            Rigidbody2D.position = new Vector2(Mathf.Clamp(Rigidbody2D.position.x, -4, 37f), Rigidbody2D.position.y);
             ani.SetBool("Run", false);
             ani.SetBool("attack", false);
             cronometro += 1 * Time.deltaTime;

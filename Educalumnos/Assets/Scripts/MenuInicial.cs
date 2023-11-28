@@ -17,6 +17,10 @@ public class MenuInicial : MonoBehaviour
         SceneManager.LoadScene("MenuInicial");
      }
 
+     public void MenuNiveles(){
+         SceneManager.LoadScene("MenuNiveles");
+     }
+
      public void Salir(){
           Debug.Log("Salir...");
           Application.Quit();
