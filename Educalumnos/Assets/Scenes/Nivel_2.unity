@@ -410,8 +410,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4294769917
+  m_fontColor: {r: 0.990566, g: 0.98656106, b: 0.98656106, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -565,7 +565,7 @@ Transform:
   m_GameObject: {fileID: 168054917}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.3795567, y: -0.5287013, z: -10}
+  m_LocalPosition: {x: -2.4484768, y: -0.52775764, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -673,8 +673,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4294901503
+  m_fontColor: {r: 1, g: 0.9959569, b: 0.9959569, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -841,6 +841,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 182b9fe6b72fe0640a296af83d7f360e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Item: {fileID: 4048824204520685663, guid: 900044aabdd5da747af2543933c7acb4, type: 3}
   AtaqueE: {fileID: 7439109107569555112, guid: d02d0c6b634703f4ea3c59a48fca8a4c, type: 3}
   panelReinicio: {fileID: 570268973}
   Speed: 10
@@ -1035,7 +1036,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.09433961, g: 0.086838216, b: 0.086838216, a: 0.392}
+  m_Color: {r: 0.09433961, g: 0.086838216, b: 0.086838216, a: 0.6509804}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
