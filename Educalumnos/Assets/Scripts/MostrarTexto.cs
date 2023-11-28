@@ -30,12 +30,16 @@ public class MostrarTexto : MonoBehaviour
     }
 
     public void Volver(){
-        SceneManager.LoadScene("MenuInicial");
+        SceneManager.LoadScene("MenuNiveles");
     }
 
     public void Reintentar(){
         SceneManager.LoadScene("Nivel_1");
      }
+
+    public void Nivel2(){
+        SceneManager.LoadScene("Nivel_2");
+    }
 
 
 }
