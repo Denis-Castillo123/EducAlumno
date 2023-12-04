@@ -568,7 +568,7 @@ Transform:
   m_GameObject: {fileID: 168054917}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.0403728, y: -0.48804855, z: -10}
+  m_LocalPosition: {x: -2.6861677, y: -0.48787498, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -724,6 +724,10 @@ PrefabInstance:
       propertyPath: panelReinicio
       value: 
       objectReference: {fileID: 570268973}
+    - target: {fileID: 1007769556916428627, guid: e4ecbe3e39f0c894d8f478d17437df98, type: 3}
+      propertyPath: textoAVisualizar
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 3312426336177850429, guid: e4ecbe3e39f0c894d8f478d17437df98, type: 3}
       propertyPath: m_Name
       value: Profesor
