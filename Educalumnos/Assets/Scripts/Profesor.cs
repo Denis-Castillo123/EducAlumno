@@ -1,9 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using TMPro;
+
 
 public class Profesor : MonoBehaviour
 {
+    public TMP_Text textoAVisualizar;
+    private int cantidadEnemigos;
+    private float tiempoEspera = 3f;
+    public float duracion = 2f;
     public GameObject Item;
     public GameObject AtaqueE;
     public GameObject panelReinicio;
@@ -43,6 +50,7 @@ public class Profesor : MonoBehaviour
         JumpRest = JumMax;
         vida = maximoVida;
         barraVida.InicializarBarraVida(vida);
+        textoAVisualizar.enabled = false;
     }
 
     void Awake()
@@ -79,6 +87,15 @@ public class Profesor : MonoBehaviour
         {
             Shoot();
             LastShoot = Time.time;
+        }
+
+        cantidadEnemigos = GameObject.FindGameObjectsWithTag("Enemigo").Length;
+        tiempoEspera -= Time.deltaTime;
+        if (tiempoEspera <= 0f)
+        {
+
+            EnemigosEliminados();
+
         }
         
     }
@@ -166,6 +183,24 @@ public class Profesor : MonoBehaviour
             barraVida.CambiarVidaActual(vida);
             //Debug.Log("Vida actualizada: " + vida);
         }
+    }
+
+    public void EnemigosEliminados()
+    {
+
+        if (cantidadEnemigos <= 0)
+        {
+            textoAVisualizar.enabled = true;
+            SceneManager.LoadScene("Nivel_2");  
+
+        }
+    }
+
+
+    void OcultarTexto()
+    {
+        // Desactiva el texto.
+        textoAVisualizar.enabled = false;
     }
 
 
