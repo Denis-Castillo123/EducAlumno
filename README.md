@@ -6,7 +6,7 @@
 ## Despliegues
 | Plataforma | Enlace de Github |
 |------------|-------------------|
-| Móvil |  |
+| Móvil | https://github.com/Denis-Castillo123/EducaAlumnoMovil |
 | Web | https://github.com/maramendoza692/EducalumnosWeb.git    Enlace del juego: https://mmendozar.itch.io/educalumnos |
 | Desktop | https://github.com/Denis-Castillo123/EducAlumno/blob/main/Educalumnos.exe |
 
